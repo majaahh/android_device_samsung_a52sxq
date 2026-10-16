@@ -59,7 +59,7 @@ PRODUCT_PACKAGES += \
     sensors.a52sxq
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
