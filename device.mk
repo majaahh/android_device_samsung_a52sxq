@@ -16,7 +16,7 @@ PRODUCT_PACKAGES += \
 
 # Display - Configuration
 PRODUCT_PACKAGES += \
-    display_id_4630947232161729154.xml
+    displayconfig.xml
 
 # Fingerprint
 $(call soong_config_set,samsungUdfpsVars,udfps_zorder,0x20000000u)
