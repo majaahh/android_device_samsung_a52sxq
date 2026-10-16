@@ -19,14 +19,6 @@ SOONG_CONFIG_qtidisplay_udfps := true
 TARGET_ANDROID_INFO_EXTRA_FILE := $(DEVICE_PATH)/configs/installer/android-info-extra.txt
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/installer/board-info.txt
 
-# Kernel
-TARGET_KERNEL_CONFIG := vendor/lineage-a52sxq_defconfig
-
-# Kernel - Modules
-BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/modules/modules.load.recovery))
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/modules/modules.load))
-RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)
-
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
