@@ -31,7 +31,7 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 M 0,11.43427858034597 a 9.899054752987353,9.899054752987353 0 1,0 0,19.79810950597471 a 9.899054752987353,9.899054752987353 0 1,0 0,-19.79810950597471 Z @dp</string>
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M 540,30 a 26,26 0 1,0 0,52 a 26,26 0 1,0 0,-52 Z @left</string>
 
     <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
     <bool name="config_screen_off_udfps_enabled">true</bool>
