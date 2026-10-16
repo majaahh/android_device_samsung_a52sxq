@@ -3,5 +3,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_a52sxq.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/lineage_a52sxq.mk
