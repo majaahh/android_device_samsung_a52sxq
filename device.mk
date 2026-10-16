@@ -48,7 +48,11 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 TARGET_HAVE_SEC_NFC := true
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayDevice \
+    SettingsOverlayDevice \
+    SettingsProviderOverlayDevice \
+    SystemUIOverlayDevice
 
 # Sensors
 PRODUCT_PACKAGES += \
