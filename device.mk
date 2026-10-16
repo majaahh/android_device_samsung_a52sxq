@@ -3,15 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit common makefiles
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-
 # Inherit the common tree
 $(call inherit-product, device/samsung/sm7325-common/common.mk)
-
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit proprietary blobs
 $(call inherit-product, vendor/samsung/a52sxq/a52sxq-vendor.mk)
