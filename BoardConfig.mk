@@ -19,6 +19,10 @@ SOONG_CONFIG_qtidisplay_udfps := true
 TARGET_ANDROID_INFO_EXTRA_FILE := $(DEVICE_PATH)/configs/installer/android-info-extra.txt
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/installer/board-info.txt
 
+# Partitions - Dynamic
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 10638852096
+BOARD_SUPER_PARTITION_SIZE := 10643046400
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
