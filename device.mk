@@ -17,17 +17,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, vendor/samsung/a52sxq/a52sxq-vendor.mk)
 
 # Audio - Configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_platform_info_diff.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_diff.xml \
-    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+PRODUCT_PACKAGES += \
+    audio_platform_info_diff.xml \
+    mixer_paths.xml
 
 # Branding
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 
 # Display - Configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/display_id_4630947232161729154.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947232161729154.xml
+PRODUCT_PACKAGES += \
+    display_id_4630947232161729154.xml
 
 # Fingerprint
 $(call soong_config_set,samsungUdfpsVars,udfps_zorder,0x20000000u)
@@ -56,10 +56,8 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    hals.conf \
     sensors.a52sxq
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
