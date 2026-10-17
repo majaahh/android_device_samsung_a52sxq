@@ -6,10 +6,6 @@
 # Inherit device configuration
 $(call inherit-product, device/samsung/a52sxq/device.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
-
 # Device identifiers
 PRODUCT_NAME := lineage_a52sxq
 PRODUCT_DEVICE := a52sxq
